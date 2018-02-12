@@ -1,0 +1,8 @@
+Syntax transformer-takes syntax and returns syntax
+Define-syntax- making "transformer binding": replace syntax by output search-and-replace
+Syntax-source stx, syntax-line stx, syntax-column stx-functions that access the syntax object
+Syntax-datum-> converts it completely into an S-expression
+cdr-returns second element of the pair p
+Normal Racket code runs at run time
+Syntax transformer-evaluates at compile time
+Syntax transformer can rearrange the syntax: rewrite the code at compile time. The pieces of syntax are moved around, but they aren't actually evaluated until run time.
